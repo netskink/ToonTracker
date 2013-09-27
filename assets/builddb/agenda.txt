@@ -1,0 +1,27 @@
+rooting phones
+1. why do it. Mention cpu overclock, apps in firmware, logcat removal, multitouch
+2. Basic concept of rooting and changing mods.
+3. drawbacks. mention adb shell. permissions.
+
+SQL and widgets
+1. show some relation algebra to level set. selection, projection, joins.
+2. show how to create a table in sql with a schema.
+3. show how to create a database and insert values into tables using a .bat file.
+4. show how to add the database to an android project.
+5. show how to query results with simple query. Mention that there is another way using sqlquery class.
+5.aa show the skyrimlab app and how the tables are not 3rd normal form.  show them quickly how the xml is converted to sql using xslt.
+5.a show how ot use debugger to debug a query. Show difference between debug call stack and exception traceback. Show how to let it rip and get caused by logcat entry.
+5.b Mention how to speed up debugging by using mouse overs instead of watch expressions.
+6. show how to do a query which involves joins. How sqlite differs on column names from RA.
+7. show how to do an insert.
+8. show how to create a list view.
+9. show how to modify a list view so it shows color.
+9.a show how to create equivalent of #define using a class. Ask how to do it via enum.
+10. Ask about a better way to manage multiple items in view.
+11. show how to add a menu to an app. Ask if its better to have all your activities inherit from an activity so all get a menu.
+12. Show how to use a spinner using resource files.
+13. show how to use a spinner using an array.
+14. show how to use a spinner using a sql query.
+15. show how to create and use tab control. Ask about my oncreate method vs the layout file.
+16. show how to use layout files to get the look you want, in particular composite layouts and scroll views.
+17. Ask about version numbers and installs.  ie. why do I have to uninstall everytime I make a database update even though I update the version number.

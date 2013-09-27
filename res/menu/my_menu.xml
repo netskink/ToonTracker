@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menuItemEraseDatabase" android:title="Erase Database"></item>
+    <item android:id="@+id/menuItemBackupDatabase" android:title="Backup Database"></item>
+    <item android:id="@+id/menuItemRestoreDatabase" android:title="Restore Database"></item>
+    <item android:id="@+id/menuItemHelp" android:title="Help"></item>
+    <item android:id="@+id/menuItemAbout" android:title="About"></item>
+</menu>

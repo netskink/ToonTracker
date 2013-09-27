@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Toon Tracker</string>
+    <string name="help_text">
+    If you get errors, try to use the menu to erase the existing database.  This comes in handy during uprades.
+    If all else fails, simply uninstall the application and reinstall.  The onupgrade routine for the database is still
+    a stub.\n
+   	You can use the back and restore database feature with your database.  If the database format changes, it enables you
+   	to use sqlite commands to massage the data on upgrades.\n
+   	Long pressing a row in the crewskill needs list will delete a row.\n
+   	Quick clicking the crewskill level number in your toons crewskills tab will pull up the editor for adjusting your level.\n
+   	  
+    \nJohn F. Davis\n
+     guildmaster of Hei An Kong Zhi\n
+     Server: Tendys Noori        
+    </string>
+    <string name="about_text">
+	Author: John F. Davis\n
+	Email: davisjf@gmail.com\n
+	URL: http://www.heiankongzhi.com\n
+	URL: http://www.skink.net\n
+	Version: 1.0\n 
+	\tInitial Release\n
+	Version: 1.1\n
+	\tAdded some companions, updated general tab icons (they suck worse), updated launcher icon and added splash screen.\n
+	Verion:1.2\n
+	\tNeeds scrollable tab contents.  Everything I have tried so far does not scroll vertically. Better icons.\n
+	Version:1.3\n
+	\tChanged name, added blue and red colors for republic and imperial companion list.\n
+	Version:1.4\n
+	\tAdded class info to database and tied this into each companion.  It shows on companion detail.\n
+	Version:1.5\n
+	\tAdded search capability for gifts.\n
+	Version:1.6\n
+	\tAfter you do a search of gifts and get the toons list, now you can click a name and go that companions detail.\n
+	\tAlso companion names are color coded by color.\n
+	Version:1.7\n
+	\tReworked the database to make it closer to optimal.  Added Class tables.  Reworked code to use new database form.\n
+	\tClosed cursors when done with queries to remove logcat messages about freeing open cursors.\n
+	\tAdded scrolling to textViews\n
+	Version:1.8\n
+	\tFinally you can add and list toons.  Viewing a toon is still not implemented.\n
+	Version:1.9\n
+	\tViewing of some toon details enabled.\n
+	Version:2.0\n
+	\tAdded an erase database capability and added a top level menu activity.  Also added stubs for database version.\n
+	\tAdded a todo list for PvP daily.  Stub is in place for other dailies.  Resized some buttons.
+	Version:2.1\n
+	\tAdded database backup and restore to sdcard.\n
+	\tAdded ability to install to sdcard.\n
+	\tAdded a crewskill summary activity.\n
+	\tAdded an async task and progress dialog for database export.\n
+	Version:2.2\n
+	\tAdded a crewskill needs activity.
+	Version:2.3\n
+	\tAdded an ability to delete a need by long pressing the row.  Fixed so that the screen refreshes when an item is added or deleted.\n
+	Version:2.4\n
+	\tModified crewskill summary activity to size text and columns based upon screensize.  Originally, I was working on a Nexus One or Ideos.\n  
+	\tNow, it looks ok on a Xoom, but its clipped vertically on a Nexus One.  Sadly I don\'t have anymore time to dork with it today.\n
+	</string>
+
+        
+   <string-array name="faction_array">
+        <item>Imperial</item>
+        <item>Republic</item>
+    </string-array>        
+
+   <string-array name="crewskill_array">
+       <item>these are unused now</item>
+       <item>Archaeology</item>
+       <item>Armortech</item>
+       <item>Armstech</item>
+       <item>Artifice</item>
+       <item>Bioanalysis</item>
+       <item>Biochem</item>
+       <item>Cybertech</item>
+       <item>Diplomancy</item>
+       <item>Investigation</item>
+       <item>Scavenging</item>
+       <item>Slicing</item>
+       <item>Synthweaving</item>
+       <item>Treasure Hunting</item>
+       <item>Underworld Trading</item>
+   </string-array>        
+       
+   <string-array name="class_array">
+       	<item>these are unused now</item>
+       	<item>Assassin</item>
+		<item>Commando</item>     
+		<item>Juggernaut</item>
+		<item>Marauder</item>
+		<item>Mercenary</item>
+		<item>Operative</item>
+		<item>Powertech</item>
+		<item>Sage</item>
+		<item>Shadow</item>           
+		<item>Sniper</item>
+		<item>Sorcerer</item>
+		<item>Vanguard</item>
+	</string-array>        
+
+       
+   <string-array name="gear_array">
+       	<item>Slot</item>
+       	<item>Level</item>
+       	<item>Pri Stat</item>
+       	<item>Sockets?</item>
+       	<item>Augments?</item>
+       	<item>Rating</item>
+       
+		<item>Head</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>Chest</item>     
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		
+		<item>Wrist</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+   		<item>Hands</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+
+		<item>Waist</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    		    
+		<item>Legs</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>Feet</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>Ears</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>Implant 1</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>Implant 2</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+	</string-array>        
+       
+       
+   <string-array name="crewskill_summary_array">
+       	<item></item>
+       	<item>toon1</item>
+       	<item>toon2</item>
+       	<item>toon3</item>
+       	<item>toon4</item>
+       	<item>toon5</item>
+       	<item>toon6</item>
+       
+		<item>cs1</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    
+		<item>cs2</item>     
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    		
+		<item>cs3</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    
+   		<item>cs4</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>cs5</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    		    		    
+		<item>cs6</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    
+		<item>cs7</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    
+		<item>cs8</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    
+		<item>cs9</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		    
+		<item>cs10</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    
+		<item>cs11</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		
+		<item>cs12</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		
+		<item>cs13</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		    		
+		<item>cs14</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+		<item>-</item>
+	</string-array>        
+
+       
+   <string-array name="needs_mats_array">
+       	<item>Toon</item>
+       	<item>Yield</item>
+       	<item>Grade</item>
+       	<item>Count</item>
+       	<item>Name</item>
+
+       	
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	    	    	
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+
+       	
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	    	    	
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	<item>-</item>
+       	    	    
+       	    	    	    		    		    		    		    		    
+</string-array>        
+
+        
+   <string-array name="mygrade_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>        
+
+        
+   <string-array name="mycount_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+	</string-array>        
+       
+       
+</resources>

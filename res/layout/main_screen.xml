@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/buttonNeedsMats"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Needs Mats" />
+
+    <Button
+        android:id="@+id/buttonTodo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Todo List" />
+
+    <Button
+        android:id="@+id/buttonCrewskillSummary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Crewskill Summary" />
+
+    <Button
+        android:id="@+id/buttonBrowse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Companions" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonArmor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Armor" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonWeapons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Weapons"  android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonGifts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gifts" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonNewToon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="New Toon" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonListToons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="List toons" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

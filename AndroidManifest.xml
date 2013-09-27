@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.skink.swtor.toontracker"
+    android:versionCode="2"
+    android:versionName="2.5"
+    android:installLocation="preferExternal">
+    
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".BrowseCompanionActivity" >
+            <intent-filter >
+                <action android:name="net.skink.swtor.toontracker.BrowseCompanionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".AboutActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.AboutActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
+        </activity>
+        
+        <activity android:name=".EditValueActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.EditValueActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
+        </activity>
+        
+            <activity android:name=".HelpActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.HelpActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".ToonOverviewActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.ToonOverviewActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ToonSkillsTabActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.ToonSkillsTabActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ToonGearActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.ToonGearActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".CrewskillSummaryActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.CrewskillSummaryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+            
+        <activity android:name=".CompanionOverviewActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.CompanionOverviewActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".CompanionSkills"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.CompanionSkills" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        
+        <activity android:name=".NeedsMatsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.NeedsMatsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".NewNeedsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.NewNeedsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+            
+        <activity android:name=".CompanionGeneral"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.CompanionGeneral" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ToonGeneral"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.ToonGeneral" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+            
+        <activity android:name=".CompanionGifts"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.CompanionGifts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainScreen"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.MainScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".SearchGifts"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.SearchGifts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".SearchArmors"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.SearchArmors" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+            
+        <activity android:name="net.skink.swtor.toontracker.SplashScreen"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".NewToonActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.NewToonActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+            
+        <activity android:name=".BrowseToonsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.BrowseToonActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".TodoListActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboard|keyboardHidden|orientation">
+        
+            <intent-filter>
+                <action android:name="net.skink.swtor.toontracker.TodoListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+            
+    </application>
+
+</manifest>
